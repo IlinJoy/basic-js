@@ -30,7 +30,6 @@ function repeater( str, options ) {
     for( let i = 1; i < reps; i += 1){
       acc.push(str)
     }
-
     return acc.join(divider);
   }
 
@@ -38,8 +37,6 @@ function repeater( str, options ) {
 
   return repeatStr(string + additionStr, separator, repeatTimes)
 }
-
-console.log(repeater(null, { repeatTimes: 3, separator: '??? ', addition: null, additionRepeatTimes: 3, additionSeparator: '!!!' }))
 
 module.exports = {
   repeater
